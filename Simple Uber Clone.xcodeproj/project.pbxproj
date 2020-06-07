@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -161,7 +161,6 @@
 				6ADB62B6D92A969D5FC591C1 /* Pods-Simple Uber CloneTests.debug.xcconfig */,
 				519EC77DCD64FFBE975E9A9D /* Pods-Simple Uber CloneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
