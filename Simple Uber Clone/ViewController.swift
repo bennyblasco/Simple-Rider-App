@@ -45,6 +45,7 @@
                                     self.displayAlert(title: "Error", message: error!.localizedDescription)
                                 }else {
                                     print ("Sign up successfully")
+                                    self.performSegue(withIdentifier: "riderSegue", sender: nil)
                                 }
                             }
                             
@@ -55,6 +56,7 @@
                                     self.displayAlert(title: "Error", message: error!.localizedDescription)
                                 }else {
                                     print ("Sign in successfully")
+                                    self.performSegue(withIdentifier: "riderSegue", sender: nil)
                                 }
                                 
                                 

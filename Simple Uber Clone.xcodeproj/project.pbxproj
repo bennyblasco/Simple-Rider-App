@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E34019728357FE27FE8F16 /* Pods_Simple_Uber_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6863DC7435426D2DD06E0FEF /* Pods_Simple_Uber_Clone.framework */; };
+		1837E8DE248E83850063966A /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837E8DD248E83850063966A /* RiderViewController.swift */; };
 		18E589F5248D80BE00479E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E589F4248D80BE00479E28 /* AppDelegate.swift */; };
 		18E589F7248D80BE00479E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E589F6248D80BE00479E28 /* SceneDelegate.swift */; };
 		18E589F9248D80BE00479E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E589F8248D80BE00479E28 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		036876E21AA38CC4FB703F35 /* Pods-Simple Uber Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Uber Clone.release.xcconfig"; path = "Target Support Files/Pods-Simple Uber Clone/Pods-Simple Uber Clone.release.xcconfig"; sourceTree = "<group>"; };
+		1837E8DD248E83850063966A /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
 		18E589F1248D80BE00479E28 /* Simple Uber Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Uber Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E589F4248D80BE00479E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E589F6248D80BE00479E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				18E589F4248D80BE00479E28 /* AppDelegate.swift */,
 				18E589F6248D80BE00479E28 /* SceneDelegate.swift */,
 				18E589F8248D80BE00479E28 /* ViewController.swift */,
+				1837E8DD248E83850063966A /* RiderViewController.swift */,
 				18E589FA248D80BE00479E28 /* Main.storyboard */,
 				18E58A00248D80C000479E28 /* Assets.xcassets */,
 				18E58A02248D80C000479E28 /* LaunchScreen.storyboard */,
@@ -414,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1837E8DE248E83850063966A /* RiderViewController.swift in Sources */,
 				18E589F9248D80BE00479E28 /* ViewController.swift in Sources */,
 				18E589FF248D80BE00479E28 /* Simple_Uber_Clone.xcdatamodeld in Sources */,
 				18E589F5248D80BE00479E28 /* AppDelegate.swift in Sources */,
