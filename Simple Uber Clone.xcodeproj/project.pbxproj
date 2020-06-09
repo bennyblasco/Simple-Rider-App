@@ -19,6 +19,7 @@
 		18E58A0F248D80C000479E28 /* Simple_Uber_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E58A0E248D80C000479E28 /* Simple_Uber_CloneTests.swift */; };
 		18E58A1A248D80C000479E28 /* Simple_Uber_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E58A19248D80C000479E28 /* Simple_Uber_CloneUITests.swift */; };
 		18E58A28248D875300479E28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18E58A27248D875300479E28 /* GoogleService-Info.plist */; };
+		18FF18AA248F4D3400F32BF9 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18A9248F4D3400F32BF9 /* DriverTableViewController.swift */; };
 		1DC2FA3467587BADB5CAE389 /* Pods_Simple_Uber_Clone_Simple_Uber_CloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365C599E03512128621AF614 /* Pods_Simple_Uber_Clone_Simple_Uber_CloneUITests.framework */; };
 		790156B2255D644E2E8F3347 /* Pods_Simple_Uber_CloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE88CFC622F8292BBBFF43A8 /* Pods_Simple_Uber_CloneTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		18E58A19248D80C000479E28 /* Simple_Uber_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Uber_CloneUITests.swift; sourceTree = "<group>"; };
 		18E58A1B248D80C000479E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E58A27248D875300479E28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18FF18A9248F4D3400F32BF9 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTableViewController.swift; sourceTree = "<group>"; };
 		239A76D44A2E49F0652B1054 /* Pods-Simple Uber Clone-Simple Uber CloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Uber Clone-Simple Uber CloneUITests.release.xcconfig"; path = "Target Support Files/Pods-Simple Uber Clone-Simple Uber CloneUITests/Pods-Simple Uber Clone-Simple Uber CloneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		365C599E03512128621AF614 /* Pods_Simple_Uber_Clone_Simple_Uber_CloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Uber_Clone_Simple_Uber_CloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		519EC77DCD64FFBE975E9A9D /* Pods-Simple Uber CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Uber CloneTests.release.xcconfig"; path = "Target Support Files/Pods-Simple Uber CloneTests/Pods-Simple Uber CloneTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				18E589F6248D80BE00479E28 /* SceneDelegate.swift */,
 				18E589F8248D80BE00479E28 /* ViewController.swift */,
 				1837E8DD248E83850063966A /* RiderViewController.swift */,
+				18FF18A9248F4D3400F32BF9 /* DriverTableViewController.swift */,
 				18E589FA248D80BE00479E28 /* Main.storyboard */,
 				18E58A00248D80C000479E28 /* Assets.xcassets */,
 				18E58A02248D80C000479E28 /* LaunchScreen.storyboard */,
@@ -422,6 +425,7 @@
 				18E589FF248D80BE00479E28 /* Simple_Uber_Clone.xcdatamodeld in Sources */,
 				18E589F5248D80BE00479E28 /* AppDelegate.swift in Sources */,
 				18E589F7248D80BE00479E28 /* SceneDelegate.swift in Sources */,
+				18FF18AA248F4D3400F32BF9 /* DriverTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

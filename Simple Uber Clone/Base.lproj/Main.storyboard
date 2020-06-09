@@ -171,16 +171,16 @@
             </objects>
             <point key="canvasLocation" x="2055.072463768116" y="73.660714285714278"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Driver Table View Controller-->
         <scene sceneID="RMH-Yw-Ekd">
             <objects>
-                <tableViewController id="J0z-Yw-Xh6" sceneMemberID="viewController">
+                <tableViewController id="J0z-Yw-Xh6" customClass="DriverTableViewController" customModule="Simple_Uber_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NgA-3R-Y4g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yTw-hK-iDC">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rideRequestCell" id="yTw-hK-iDC">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yTw-hK-iDC" id="BMG-GZ-MY4">
@@ -195,7 +195,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="K45-04-6KC">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="kge-EV-dX4"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="kge-EV-dX4">
+                            <connections>
+                                <action selector="logoutTapped:" destination="J0z-Yw-Xh6" id="7Ki-lL-YmW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edo-yt-rM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
