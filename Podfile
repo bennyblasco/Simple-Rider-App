@@ -9,6 +9,7 @@ target 'Simple Uber Clone' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'Simple Uber CloneTests' do
     inherit! :search_paths
