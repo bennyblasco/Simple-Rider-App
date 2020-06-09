@@ -47,37 +47,26 @@ class RiderViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
-        if let email = Auth.auth().currentUser?.email{
+       
+    }
+    @IBAction func callUberTapped(_ sender: Any) {
+         if let email = Auth.auth().currentUser?.email{
+                    
             if uberHasBeenCalled{
                 uberHasBeenCalled = false
                 callAnUberButton.setTitle("Call an Uber", for: .normal)
-                Database.database().reference().child("RideRequests").queryOrdered(byChild: "email").queryEqual(toValue: email).observe(.childAdded) { (snapshot) in
+                Database.database().reference().child("RideRequests").queryOrdered(byChild: "email").queryEqual(toValue: email).observe(.childAdded,with: { (snapshot) in
                     snapshot.ref.removeValue()
                     Database.database().reference().child("RideRequests").removeAllObservers()
-                }
+                })
             }
             else{
                 let rideRequestDictionary : [String:Any] = ["email": email,"lat":userlocation.latitude, "lon":userlocation.longitude]
+                
                 Database.database().reference().child("RideRequests").childByAutoId().setValue(rideRequestDictionary)
                 uberHasBeenCalled = true
                 callAnUberButton.setTitle("Cancel Uber", for: .normal)
             }
-            
-            
         }
-        
     }
-    @IBAction func callUberTapped(_ sender: Any) {
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
