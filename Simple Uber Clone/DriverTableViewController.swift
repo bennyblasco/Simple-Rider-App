@@ -80,6 +80,35 @@ class DriverTableViewController: UITableViewController, CLLocationManagerDelegat
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let snapshot = rideRequests[indexPath.row]
+        performSegue(withIdentifier: "acceptSegue", sender: snapshot)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let acceptVC = segue.destination as? AcceptRequestViewController{
+            if let snapshot = sender as? DataSnapshot {
+                if let rideRequestDictionary = snapshot.value as? [String:AnyObject]{
+                    if let email = rideRequestDictionary["email"] as? String{
+                        
+                        
+                        if let lat = rideRequestDictionary["lat"] as? Double{
+                            if let lon = rideRequestDictionary["lon"] as? Double{
+                                acceptVC.requestEmail = email
+                                let location = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+                                acceptVC.requestLocation = location
+                                acceptVC.driverLocation = driverLocation
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
+            
+            
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
