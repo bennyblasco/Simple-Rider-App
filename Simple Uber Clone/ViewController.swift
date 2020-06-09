@@ -44,8 +44,22 @@
                                 if error != nil{
                                     self.displayAlert(title: "Error", message: error!.localizedDescription)
                                 }else {
-                                    print ("Sign up successfully")
-                                    self.performSegue(withIdentifier: "riderSegue", sender: nil)
+                                    
+                                    if self.riderDriverSwitch.isOn{
+                                       //Driver
+                                        let req = Auth.auth().currentUser?.createProfileChangeRequest()
+                                        req?.displayName = "Driver"
+                                        req?.commitChanges(completion: nil)
+                                        //print ("Sign up driver successfully")
+                                        self.performSegue(withIdentifier: "driverSegue", sender: nil)
+                                    }else{
+                                       //Rider
+                                        let req = Auth.auth().currentUser?.createProfileChangeRequest()
+                                        req?.displayName = "Rider"
+                                        req?.commitChanges(completion: nil)
+                                        self.performSegue(withIdentifier: "riderSegue", sender: nil)
+                                    }
+                                    
                                 }
                             }
                             
@@ -55,11 +69,15 @@
                                 if error != nil{
                                     self.displayAlert(title: "Error", message: error!.localizedDescription)
                                 }else {
-                                    print ("Sign in successfully")
-                                    self.performSegue(withIdentifier: "riderSegue", sender: nil)
+                                    if user?.user.displayName == "Driver"{
+                                        //Driver
+                                        //print("Log in Driver")
+                                        self.performSegue(withIdentifier: "driverSegue", sender: nil)
+                                    }else{
+                                        //Rider
+                                        self.performSegue(withIdentifier: "riderSegue", sender: nil)
+                                    }
                                 }
-                                
-                                
                             }
                         }
                     }
